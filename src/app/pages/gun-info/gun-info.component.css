@@ -1,0 +1,77 @@
+.header-title {
+  padding: 80px 100px;
+}
+
+.header-title h1 {
+  font-family: 'Open Sans', arial, sans-serif;
+  letter-spacing: 7px;
+  transition: 0.4s;
+}
+
+.header-title h1:hover {
+  letter-spacing: 15px;
+}
+
+.btn-customer-2 {
+  border: none;
+  background: #e8e3186b;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-customer-2:hover {
+  color: #85ebc9 !important;
+  font-weight: 600 !important;
+  letter-spacing: 5px;
+  background: none;
+  border: 1px solid #85ebc9;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+.card.item {
+  position: relative;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.card.item:hover {
+  opacity: 0.7;
+}
+
+.card.item:hover a{
+  display: block;
+}
+
+.card.item a {
+  position:absolute;
+  top: 40%;
+  display: none;
+}
+
+.under-line {
+  padding: 1px 1px;
+  background: #85ebc9;
+}
+
+.list-gun-info-row-2 {
+  margin-bottom: 50px;
+}
+
+.list-gun-info-row a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 100%;
+   max-width: 1500px;
+  }
+}

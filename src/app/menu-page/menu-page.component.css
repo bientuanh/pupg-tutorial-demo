@@ -1,0 +1,77 @@
+#image-landing-page {
+  background-image: url('../../assets/images/background/bg2.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+  
+#image-landing-page p {
+  color: white;
+  font-size: 133%;
+  font-weight: bold;
+}
+
+#image-landing-page span {
+  color: #facdfa;
+  letter-spacing: 10px;
+}
+  
+#image-landing-page h1 {
+  font-size: 500%;
+  color: #8cfdd4dd;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+#image-landing-page h1:hover {
+  letter-spacing: 12px;
+}
+
+#image-landing-page .row.justify-content-center {
+  padding-bottom: 28px;
+}
+
+.btn-customer-2 {
+  border: none;
+  background: #e8e3186b;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 16px 35px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-customer-2:hover {
+  color: #85ebc9 !important;
+  font-weight: 700 !important;
+  letter-spacing: 7px;
+  background: none;
+  border: 1px solid #85ebc9;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+#underlined-title {
+  padding: 1px;
+  background-color: white;     
+}
+
+.list-tutorial-title {
+  padding-top: 50px; 
+}
+
+.map {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.list-tutorial .buy-button{
+  margin-right: 5px;
+}

@@ -1,0 +1,124 @@
+<div class="main-container">
+
+
+  <app-navbar-header></app-navbar-header>
+
+
+
+  <div class="header-title">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-14 text-center">
+          <h1>GUN INFO</h1>
+          <div class="under-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="list-gun-info-row">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div *ngFor="let linkImg of listLinkImages; let i = index" [attr.data-index]="i"
+          class='col-lg-4 col-md-6 col-sm-12 my-3 text-center'>
+          <div class="card item" style="width: 22rem;">
+            <img src={{linkImg}} class="card-img-top img-thumbnail" alt="image1">
+            <a class='show-info-btn btn-customer-2' data-target="#modal-gun-info" data-toggle="modal"
+              (click)='clickShowBtn(i)'>SHOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-xl" id="modal-gun-info" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ objInfo.name }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <div class="row">
+              <!-- Gun image -->
+              <div class="col-lg-9">
+                <img src="{{objInfo.linkImg}}" alt="" class="img-thumbnail">
+              </div>
+              <!-- End of gun image -->
+
+              <!-- Gun info -->
+              <div class="col-lg-3">
+                <h1>INFO</h1>
+
+                <!-- Row 1 -->
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4>Damge:</h4>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>{{objInfo.damage}}</h4>
+                  </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4>Magazine:</h4>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>{{objInfo.magazine}}-round box</h4>
+                  </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4>Speed:</h4>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>{{objInfo.speed}} m/s</h4>
+                  </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4>Mass:</h4>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>{{objInfo.mass}} lb</h4>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- End of gun info -->
+
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of modal -->
+
+
+
+  <app-info-footer></app-info-footer>
+
+
+</div>

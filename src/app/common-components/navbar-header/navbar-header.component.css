@@ -1,0 +1,74 @@
+.container.modalAboutMe.footerButtons {
+  padding: 40px;
+}
+
+.container.modalAboutMe.footerButtons a {
+  margin-left: 5px;
+}
+
+#modalContactMe .modal-content{
+  background-image: url('../../../assets/images/common/img2.jpg');
+}
+
+#modalContactMe button.btn.btn-primary {
+  display: inline-block;
+  width: 100%;
+}
+
+#modalContactMe .form-group{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#modalContactMe .form-group:hover{
+  opacity: 1;
+}
+
+#modalContactMe .modal-body {
+  padding: 52px 0px;
+}
+
+#modalContactMe .modal-title {
+  color: #0cffbe;
+  font-size: 164%;
+  font-weight: bold;
+}
+
+#navbar-landing-page a {
+  color: white;
+  transition: 0.3s;
+}
+
+#navbar-landing-page a:hover {
+  color: #88edca;
+}
+
+#navbar-landing-page-a-first {
+  color: #86ebc9 !important;
+  font-size: 138%;
+  font-weight: bold;
+}
+
+#navbar-landing-page .nav-item.dropdown .dropdown-menu a {
+  color: #d57aea;
+}
+
+#navbar-landing-page .navbar-toggler {
+  color: #0cffbe;
+  background-color: #88edca;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+#navbar-landing-page .navbar-toggler:hover {
+  opacity: 1;
+}
+
+#navbar-landing-page form input {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+#navbar-landing-page form input:hover {
+  opacity: 1;  
+}
