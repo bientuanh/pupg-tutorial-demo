@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "pupg-tutorial"
+  "defaultProject": "dist/pupg-tutorial"
 }
